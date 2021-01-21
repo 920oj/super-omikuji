@@ -1,0 +1,74 @@
+/*
+
+	====================
+	基礎プログラミング演習1 最終課題
+	1871020 大岩潤矢
+	====================
+	このCSSファイルは、同ディレクトリ内「index.html」で使用されています。
+	Google Chromeでの動作を確認しております。IEでは表示が崩れる可能性があります。
+
+*/
+
+/* shift_jisを指定しています。 */
+@charset "shift_jis";
+
+/* Googleが提供しているNoto Sans JapaneseというWebフォントを使用しています。 */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/* 全体的なフォントスタイル・余白を指定しています。*/
+body{
+    font: 16px/1.6 'Noto Sans Japanese', sans-serif;
+    color: #262626;
+    margin: 50px 150px 50px 150px
+}
+
+/* 学籍番号・名前は右揃えにします。 */
+p.name{
+    text-align: right
+}
+
+/* h1タグ・タイトル部分の修飾です。下部に余白とグレーの線を引きます。 */
+h1.title {
+	margin-bottom: .5em;
+	border-bottom: 4px solid #ccc;
+}
+
+/* h1タグ・見出し部分の修飾です。タイトル部分よりも少し小さくした後、下部に余白とグレーの線を引きます。 */
+h1.midashi {
+	font-size: 150%;
+	margin-bottom: .5em;
+	border-bottom: 2px solid #ccc;
+}
+
+/* h1タグ・課題部分の修飾です。中央揃えをし、周りに水色の線を描いています。 */
+h1.kadai1_1{
+	text-align: center;
+	font-size: 120%;
+	padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #35c7c7;
+}
+
+/* h2タグの修飾です。左部に水色の線を引き、さらに擬似クラス(after)を加えることで、下部に線を引いています。 */
+h2 {
+	position: relative;
+	padding: .25em 0 .5em .75em;
+	border-left: 6px solid #35c7c7;
+	font-size: 19px;
+}
+h2::after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	height: 0;
+	border-bottom: 4px solid #ccc;
+}
+
+div.omikuji{
+	text-align: center;
+	padding: 0.5em 1em;
+    margin: 2em 0;
+}

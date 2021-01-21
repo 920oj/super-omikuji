@@ -1,0 +1,32 @@
+<!--
+    基礎プログラミング演習1 最終課題
+    「スーパーおみくじ Ver 1.0」
+    1871020 大岩潤矢
+
+    動作確認はGoogle Chromeにて行いました。それ以外のブラウザでは表示が崩れる可能性があります。
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基礎プログラミング演習1 最終課題</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>基礎プログラミング演習1 最終課題</h1>
+    <p class="name">1871020 大岩潤矢</p>
+
+    <h2>スーパーおみくじ</h2>
+    <input type="form" id="name" placeholder="名前を入力"> <input type="button" value="おみくじを引く！"
+        onclick="if(clickcount == 0){omikuji();}">
+    <div class="omikuji">
+        <canvas id="omikujicanvas" width="854" height="480"></canvas>
+    </div>
+</body>
+<!-- img.onloadを使用するために、ブラウザがbodyの内容をすべて読みこんでからscriptを読み込ませるようにしています。 -->
+<script src="main.js" charset="UTF-8"></script>
+
+</html>
